@@ -137,5 +137,192 @@
         "controller" => "App\Controllers\programaFormacionController",
         "action" => "deleteProgramaFormacion"
     ],
-    ];
+
+
+
+   //TIPO USUARIO
+        "/tipousuariogym/index" => [
+            "controller" => "App\Controllers\TipoUsuarioGymController",
+            "action" => "index"
+        ],
+        "/tipousuariogym/view" => [
+            "controller" => "App\Controllers\TipoUsuarioGymController",
+            "action" => "view"
+        ],
+        "/tipousuariogym/new" => [
+            "controller" => "App\Controllers\TipoUsuarioGymController",
+            "action" => "newTipoUsuarioGym"
+        ],
+        "/tipousuariogym/create" => [
+            "controller" => "App\Controllers\TipoUsuarioGymController",
+            "action" => "createTipoUsuarioGym"
+        ],
+        "/tipousuariogym/view/(\d+)" => [
+            "controller" => "App\Controllers\TipoUsuarioGymController",
+            "action" => "viewTipoUsuarioGym"
+        ],
+        "/tipousuariogym/edit/(\d+)" => [
+            "controller" => "App\Controllers\TipoUsuarioGymController",
+            "action" => "editTipoUsuarioGym"
+        ],
+        "/tipousuariogym/update" => [
+            "controller" => "App\Controllers\TipoUsuarioGymController",
+            "action" => "updateTipoUsuarioGym"
+        ],
+        "/tipousuariogym/delete/(\d+)" => [
+            "controller" => "App\Controllers\TipoUsuarioGymController",
+            "action" => "deleteTipoUsuarioGym"
+        ],
+
+
+
+//usuario
+        '/usuario/index' => [
+        'controller' => 'App\Controllers\controlProgresoController',
+        'action' => 'index'
+    ],
+    '/usuario/view' => [
+        'controller' => 'App\Controllers\usuarioController',
+        'action' => 'view'
+    ],
+    '/usuario/new' => [
+        'controller' => 'App\Controllers\usuarioController',
+        'action' => 'newUsuario'
+    ],
+    '/usuario/create' => [
+        'controller' => 'App\Controllers\usuarioController',
+        'action' => 'createUsuario'
+    ],
+    '/usuario/view/(\d+)' => [
+        'controller' => 'App\Controllers\usuarioController',
+        'action' => 'viewUsuario'
+    ],
+    '/usuario/edit/(\d+)' => [
+        'controller' => 'App\Controllers\usuarioController',
+        'action' => 'editUsuario'
+    ],
+    '/usuario/update' => [
+        'controller' => 'App\Controllers\usuarioController',
+        'action' => 'updateUsuario'
+    ],
+    '/usuario/delete/(\d+)' => [
+        'controller' => 'App\Controllers\usuarioController',
+        'action' => 'deleteUsuario'
+    ],
+
+
+    //
+
+    '/registroIngreso/index'=> [
+        'controller' =>'App\Controllers\registroIngresoController',
+        'action' => 'index'
+    ],
+    '/registroIngreso/view'=> [
+        'controller' =>'App\Controllers\registroIngresoController',
+        'action' => 'view'
+    ],
+    '/registroIngreso/new' => [
+        'controller' => 'App\Controllers\registroIngresoController',
+        'action' => 'newRegistroIngreso'     // Nombre de la funcion 
+    ], 
+    '/registroIngreso/create'=> [
+        'controller' =>'App\Controllers\registroIngresoController',
+        'action' => 'createRegistroIngreso'
+    ],
+    '/registroIngreso/view/(\d+)'=> [
+        'controller' =>'App\Controllers\registroIngresoController',
+        'action' => 'viewRegistroIngreso'
+    ],
+    '/registroIngreso/edit/(\d+)'=> [
+        'controller' =>'App\Controllers\registroIngresoController',
+        'action' => 'editRegistroIngreso'
+    ],
+    '/registroIngreso/update'=> [
+        'controller' =>'App\Controllers\registroIngresoController',
+        'action' => 'updateRegistroIngreso'
+    ],
+    '/registroIngreso/delete/(\d+)'=> [
+        'controller' =>'App\Controllers\registroIngresoController',
+        'action' => 'deleteRegistroIngreso'
+
+
+
+
+
+
+    ],
+    
+    
+    //control proceso
+    '/controlProgreso/index'=> [
+        'controller' =>'App\Controllers\controlProgresoController',
+        'action' => 'index'
+    ],
+    '/controlProgreso/view'=> [
+        'controller' =>'App\Controllers\controlProgresoController',
+        'action' => 'view'
+    ],
+    '/controlProgreso/new' => [
+        'controller' => 'App\Controllers\controlProgresoController',
+        'action' => 'newControlProgreso'     
+    ], 
+    '/controlProgreso/create'=> [
+        'controller' =>'App\Controllers\controlProgresoController',
+        'action' => 'createControlProgreso'
+    ],
+    '/controlProgreso/view/(\d+)'=> [
+        'controller' =>'App\Controllers\controlProgresoController',
+        'action' => 'viewControlProgreso'
+    ],
+    '/controlProgreso/edit/(\d+)'=> [
+        'controller' =>'App\Controllers\controlProgresoController',
+        'action' => 'editControlProgreso'
+    ],
+    '/controlProgreso/update'=> [
+        'controller' =>'App\Controllers\controlProgresoController',
+        'action' => 'updateControlProgreso'
+    ],
+    '/controlProgreso/delete/(\d+)'=> [
+        'controller' =>'App\Controllers\controlProgresoController',
+        'action' => 'deleteControlProgreso'
+    ],
+
+
+
+    //
+    '/grupo/index'=> [
+        'controller' =>'App\Controllers\grupoController',
+        'action' => 'index'
+    ],
+    '/grupo/view'=> [
+        'controller' =>'App\Controllers\grupoController',
+        'action' => 'view'
+    ],
+    '/grupo/new' => [
+        'controller' => 'App\Controllers\grupoController',
+        'action' => 'newGrupo'     // Nombre de la funcion 
+    ], 
+    '/grupo/create'=> [
+        'controller' =>'App\Controllers\grupoController',
+        'action' => 'createGrupo'
+    ],
+    '/grupo/view/(\d+)'=> [
+        'controller' =>'App\Controllers\grupoController',
+        'action' => 'viewGrupo'
+    ],
+    '/grupo/edit/(\d+)'=> [
+        'controller' =>'App\Controllers\grupoController',
+        'action' => 'editGrupo'
+    ],
+    '/grupo/update'=> [
+        'controller' =>'App\Controllers\grupoController',
+        'action' => 'updateGrupo'
+    ],
+    '/grupo/delete/(\d+)'=> [
+        'controller' =>'App\Controllers\grupoController',
+        'action' => 'deleteGrupo'
+    ],
+];
+
+   
 ?>
